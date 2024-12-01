@@ -1,15 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>AI Questions</title>
 </head>
-
 <body>
     <div class="container">
-        <h2>Wealth Management</h2>
-        <p>Please enter user name : </p>
-        <form action="/main" method="post">
-            <p><input type="text" name="q"></p>
-            <p><input type="submit" value="Enter"></p>
+        <h2>AI Questions</h2>
+        <p>Please select a question to view:</p>
+        <form>
+            <p><button formaction="/question1" type="submit">1. How do cloud platforms enable the storage and processing of large datasets required for real-world AI projects?</button></p>
+            <p><button formaction="/question2" type="submit">2. Why are web applications essential for providing user-friendly interfaces to deploy and interact with AI models?</button></p>
+            <p><button formaction="/question3" type="submit">3. How do cloud services support the scalability of AI projects when handling high volumes of real-time data?</button></p>
+            <p><button formaction="/question4" type="submit">4. How do cloud services support scalability and ensure real-time data ingestion?</button></p>
+            <p><button formaction="/question5" type="submit">5. How do cloud-based AI services simplify model training, deployment, and monitoring in real-world scenarios?</button></p>
         </form>
     </div>
 </body>
+</html>
